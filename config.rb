@@ -44,3 +44,5 @@ page '/*.txt', layout: false
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+activate :sprockets
+sprockets.append_path File.join(root, "bower_components")
