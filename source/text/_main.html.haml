@@ -1,0 +1,11 @@
+.flow-text
+  %h2.center Этот сайт для того, кто хочет:
+  %ul.collection
+    %li.collection-item= data.main.problems[0]
+    %li.collection-item
+      %p= data.main.problems[1]
+      %ul.collection
+        - data.main.inner_problems.each do |problem|
+          %li.collection-item= problem
+  %p.center
+    %strong= data.main.idea
