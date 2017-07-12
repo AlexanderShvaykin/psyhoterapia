@@ -1,33 +1,34 @@
 ---
-title: Welcome to Middleman
+title: профессиональная помощь психотерапевта в Санкт-Петербурге, частный прием и онлайн
 ---
 
--# .row
--#   .col.s12
--#   %ul.tabs
--#     %li.tab.col.s3
--#       %a.active{:href => "#about"} О себе
--#     %li.tab.col.s3
--#       %a{:href => "#experience"} Мой опыт
--#     %li.tab.col.s3
--#       %a{:href => "#contacts"} Контакты
+#index-banner.section.no-pad-bot
+  .container
+    %br/
+    %br/
+    = partial 'view/index/main'
+    %br/
+    %br/
 
-.container
-  .row
-    .col.hide-on-small-only.m3.l2
-      %ul.section.table-of-contents
-        %li
-          %a{:href => "#main"} ГЛАВНАЯ
-        %li
-          %a{:href => "#about"} ОБО МНЕ
-        %li
-          %a{:href => "#initialization"} Intialization
-    .col.s12.m9.l10
-      #main.section.scrollspy
-        = partial 'view/index/main'
-      #about.section.scrollspy
-        = partial 'view/index/about'
-      #initialization.section.scrollspy
-        %p Content
+-# .navbar-fixed
+-#   .row.sh_top_nav
+-#     .col.m2.hide-on-small-only
+-#       = image_tag 'fake-logo.jpg', class: 'sh_logo'
+-#     .col.s12.m10
+-#       .row
+-#         .lime.lighten-4
+-#           %ul.tabs.tabs-transparent
+-#             %li.tab
+-#               %a{:href => "#main"} ГЛАВНАЯ
+-#             %li.tab
+-#               %a{:href => "#about"} ОБО МНЕ
+-#       .row
+-#         %p.flow-text Какойто очень крутой заголовок
+-#
+-# .container
+-#   #main
+-#     = partial 'view/index/main'
+-#   #about
+-#     = partial 'view/index/about'
 
 = javascript_include_tag 'init'

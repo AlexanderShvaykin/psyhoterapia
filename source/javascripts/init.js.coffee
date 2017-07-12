@@ -1,2 +1,2 @@
 $(document).ready ()->
-  $('.scrollspy').scrollSpy()
+  $('.button-collapse').sideNav()

@@ -1,11 +1,19 @@
-.flow-text
-  %h2.center Этот сайт для того, кто хочет:
-  %ul.collection
-    %li.collection-item= data.main.problems[0]
-    %li.collection-item
-      %p= data.main.problems[1]
-      %ul.collection
-        - data.main.inner_problems.each do |problem|
-          %li.collection-item= problem
-  %p.center
-    %strong= data.main.idea
+-# %ul.collection
+-#   %li.collection-item= data.main.problems[0]
+-#   %li.collection-item
+-#     %p= data.main.problems[1]
+-#     %ul.collection
+-#       - data.main.inner_problems.each do |problem|
+-#         %li.collection-item= problem
+-# %p.center
+-#   %strong= data.main.idea
+%h4.header.center.orange-text= data.main.problem
+- data.main.inner_problems.each_slice(3) do |problem_a|
+  .row
+    - problem_a.each do |problem|
+      .col.s12.m4
+        .icon-block
+          %h2.center.light-blue-text
+            %i.material-icons done
+          %h5.center= problem.title
+          %p.light= problem.desc
