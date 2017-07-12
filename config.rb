@@ -40,9 +40,11 @@ page '/*.txt', layout: false
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  # activate :minify_css
+  # activate :minify_javascript
+
+  set :http_prefix, '/vetrova-t'
+end
 activate :sprockets
 sprockets.append_path File.join(root, "bower_components")
