@@ -8,6 +8,16 @@ set_height = ()->
 
   titles.css('min-height', max_height)
 
+text_cut = ()->
+  $('.sh_default_li').liTextLength (
+      length: 700,
+      afterLength: '...',
+      fullText:false,
+      moreText: '<br>полный текст',
+      fullText:true
+  )
+
 $(document).ready ()->
   set_height()
   $(window).resize(set_height)
+  text_cut()
