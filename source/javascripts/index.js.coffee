@@ -9,10 +9,8 @@ set_height = ()->
   titles.css('min-height', max_height)
 
 text_cut = ()->
-  $('.sh_default_li').liTextLength (
-      length: 700,
-      afterLength: '...',
-      fullText:false,
+  $('.short_text').liTextLength (
+      length: 300,
       moreText: '<br>полный текст',
       fullText:true
   )
