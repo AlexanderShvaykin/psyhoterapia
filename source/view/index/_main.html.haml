@@ -1,19 +1,11 @@
--# %ul.collection
--#   %li.collection-item= data.main.problems[0]
--#   %li.collection-item
--#     %p= data.main.problems[1]
--#     %ul.collection
--#       - data.main.inner_problems.each do |problem|
--#         %li.collection-item= problem
--# %p.center
--#   %strong= data.main.idea
-%h4.header.center.orange-text= data.main.problem
-- data.main.inner_problems.each_slice(3) do |problem_a|
+%h4.header.center.orange-text= data.main.header
+- data.main.main_blocks.each_slice(3) do |blocks_collection|
   .row
-    - problem_a.each do |problem|
+    - blocks_collection.each do |block|
       .col.s12.m4
         .icon-block
           %h2.center.light-blue-text
             %i.material-icons{style: 'font-size: 35px'} sentiment_dissatisfied
-          %h5.center= problem.title
-          %p.light= problem.desc
+          %h5.center.sh_heigth_balance= block.title
+          .light.sh_default_li
+            = partial "text/#{block.file}"
