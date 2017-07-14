@@ -6,7 +6,6 @@ set_height = ()->
     if title_height > max_height
       max_height = title_height
 
-  console.log max_height
   titles.css('min-height', max_height)
 
 $(document).ready ()->
