@@ -1,3 +1,13 @@
 .sh_default_li > ul > li {
   list-style-type: disc;
 }
+.more {
+    border-bottom: 1px dashed #6DA3BD;
+    color: #6DA3BD;
+    cursor: pointer;
+    display: inline;
+}
+.more:hover {
+    border-color: #4D7285;
+    color: #4D7285;
+}
