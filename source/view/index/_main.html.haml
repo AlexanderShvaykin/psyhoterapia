@@ -1,0 +1,11 @@
+%h4.header.center.orange-text= data.main.header
+- data.main.main_blocks.each_slice(3) do |blocks_collection|
+  .row
+    - blocks_collection.each do |block|
+      .col.s12.m4
+        .icon-block
+          %h2.center.light-blue-text
+            %i.material-icons{style: 'font-size: 35px'}= block.icon
+          %h5.center.sh_heigth_balance= block.title
+          .light.sh_default_li
+            = partial "text/#{block.file}"

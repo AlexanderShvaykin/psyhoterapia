@@ -1,13 +1,42 @@
 ---
-title: Welcome to Middleman
+title: профессиональная помощь психотерапевта в Санкт-Петербурге, частный прием и онлайн
 ---
 
-.row
-  .col.s12
-  %ul.tabs
-    %li.tab.col.s3
-      %a.active{:href => "#about"} О себе
-    %li.tab.col.s3
-      %a{:href => "#experience"} Мой опыт
-    %li.tab.col.s3
-      %a{:href => "#contacts"} Контакты
+.container
+  %h5.center
+    %strong=  data.main.main_title
+
+.parallax-container.hide-on-small-only
+  .parallax
+    %img.sh_load_img{:src => "", 'data-src' => 'images/room.jpg'}/
+#index-banner.section.no-pad-bot
+  .container
+    %br/
+    %br/
+    = partial 'view/index/main'
+    %br/
+    %br/
+
+-# .navbar-fixed
+-#   .row.sh_top_nav
+-#     .col.m2.hide-on-small-only
+-#       = image_tag 'fake-logo.jpg', class: 'sh_logo'
+-#     .col.s12.m10
+-#       .row
+-#         .lime.lighten-4
+-#           %ul.tabs.tabs-transparent
+-#             %li.tab
+-#               %a{:href => "#main"} ГЛАВНАЯ
+-#             %li.tab
+-#               %a{:href => "#about"} ОБО МНЕ
+-#       .row
+-#         %p.flow-text Какойто очень крутой заголовок
+-#
+-# .container
+-#   #main
+-#     = partial 'view/index/main'
+-#   #about
+-#     = partial 'view/index/about'
+
+= javascript_include_tag 'init'
+= javascript_include_tag 'index'
