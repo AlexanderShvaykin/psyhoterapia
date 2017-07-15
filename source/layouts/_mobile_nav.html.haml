@@ -1,0 +1,18 @@
+%ul#nav-mobile.side-nav
+  %li
+    .userView
+      .background
+        %img{:src => "images/office.jpg"}/
+      %a{:href => "/about.html"}
+        %img.circle{:src => "images/me_min.jpg"}/
+      %a{:href => "/about.html"}
+        %span.white-text.name= data.main.name
+      %a{:href => "mailto: #{data.main.email}"}
+        %span.white-text.email= data.main.email
+  = partial 'layouts/shared_links'
+  %li
+    .divider
+  %li
+    %a.subheader Формы работы
+    - data.work.forms.each do |f|
+      %li= link_to f.link, f.src, class: 'waves-effect'

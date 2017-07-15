@@ -1,0 +1,16 @@
+forms:
+  -
+    title: Очная и удаленная форма работы
+    file: person
+    link: Лично
+    src: '#'
+  -
+    title: ПРАКТИКА
+    file: person
+    link: Практика
+    src: '#'
+  -
+    title: СЕМИНАР-ПРАКТИКУМ «Все мы родом из детства»
+    file: person
+    link: Семинар-практикум
+    src: '#'
