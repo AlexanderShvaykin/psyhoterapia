@@ -1,3 +1,6 @@
+SHORT_TEXT_SIZE = 300
+MORE_TEXT_BTN = '<br> читать полностью'
+
 set_height = ()->
   titles = $('.sh_heigth_balance')
   max_height = 0
@@ -9,11 +12,20 @@ set_height = ()->
   titles.css('min-height', max_height)
 
 text_cut = ()->
-  $('.short_text').liTextLength (
-      length: 300,
-      moreText: '<br>полный текст',
-      fullText:true
-  )
+  $('.short_text').each (_i, text)->
+    short_text = $(text)
+
+    text_size =
+      if short_text.data('text_size')
+        short_text.data('text_size')
+      else
+        SHORT_TEXT_SIZE
+
+    short_text.liTextLength(
+      length: text_size,
+      moreText: MORE_TEXT_BTN,
+      fullText: true
+    )
 
 $(document).ready ()->
   set_height()
