@@ -1,4 +1,7 @@
 $(document).ready ()->
-  $('.button-collapse').sideNav()
   $('.parallax').parallax()
   $(".dropdown-button").dropdown()
+  $('.button-collapse').sideNav(
+    draggable: true,
+    closeOnClick: true
+  )
