@@ -2,10 +2,10 @@
   %li
     .userView
       .background
-        %img{:src => "images/office.jpg"}/
-      %a{:href => "/about.html"}
-        %img.circle{:src => "images/me_min.jpg"}/
-      %a{:href => "/about.html"}
+        = image_tag 'office.jpg'
+      = link_to '/about.html' do
+        = image_tag 'me_min.jpg', class: 'circle'
+      = link_to '/about.html' do
         %span.white-text.name= data.main.name
       %a{:href => "mailto: #{data.main.email}"}
         %span.white-text.email= data.main.email
