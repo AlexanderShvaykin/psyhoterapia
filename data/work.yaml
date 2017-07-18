@@ -3,7 +3,7 @@ forms:
     title: Очная и удаленная форма работы
     file: person
     link: Лично
-    src: '#'
+    src: 'personal.html'
   -
     title: ПРАКТИКА
     file: person
