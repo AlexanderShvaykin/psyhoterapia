@@ -8,7 +8,7 @@ forms:
     title: ПРАКТИКА
     file: person
     link: Практика
-    src: '#'
+    src: 'practice.html'
   -
     title: СЕМИНАР-ПРАКТИКУМ «Все мы родом из детства»
     file: person
