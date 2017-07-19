@@ -1,13 +1,8 @@
-= partial 'layouts/dropdown'
 %nav.light-blue.lighten-1{:role => "navigation"}
   .nav-wrapper.container
     = partial 'layouts/mobile_nav'
     %ul.hide-on-med-and-down
       = partial 'layouts/shared_links'
-      %li
-        %a.dropdown-button{"data-activates" => "dropdown1", :href => "#!"}
-          Формы работы
-          %i.material-icons.right arrow_drop_down
 
     %a.button-collapse{"data-activates" => "nav-mobile", :href => "#"}
       %i.material-icons menu

@@ -10,9 +10,3 @@
       %a{:href => "mailto: #{data.main.email}"}
         %span.white-text.email= data.main.email
   = partial 'layouts/shared_links'
-  %li
-    .divider
-  %li
-    %a.subheader Формы работы
-    - data.work.forms.each do |f|
-      %li= link_to f.link, f.src, class: 'waves-effect'

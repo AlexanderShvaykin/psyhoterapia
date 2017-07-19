@@ -1,11 +1,21 @@
 ---
-title: Групповые приемы психотерапевта в Санкт-Петербурге
+title: Очный и онлайн прием психотерапевта, групповые приемы психотерапевта в Санкт-Петербурге
 ---
 
 .container
+  .sh_default_li
+    %br
+    %br
+    .flow-text
+      %h3.center.orange-text Формы работы
+      = image_tag 'onlinevsoffline.jpg', width: '85%', class: 'hide-on-med-and-down sh_img_center'
+      = partial 'text/practice/forms_of_work'
+      %h4 ОПЛАТА
+      %p
+        %strong= data.price.personal
   %br
   %br
   .flow-text
     %h3.center.orange-text ПРАКТИКА
     = image_tag 'big_team.png', width: 350, class: 'right hide-on-med-and-down sh_text_img'
-    = partial 'text/practice'
+    = partial 'text/practice/practice'
