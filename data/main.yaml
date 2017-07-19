@@ -4,7 +4,7 @@ email: mail@mail.ru
 main_title: ПРОФЕССИОНАЛЬНАЯ ПОМОЩЬ ХОРОШЕГО ПСИХОТЕРАПЕВТА
 main_blocks:
   -
-    title: Помогу справиться с Вашей проблемой
+    title: Помогаю людям!
     file: index/problem
     icon: sentiment_very_satisfied
   -
@@ -12,7 +12,7 @@ main_blocks:
     file: index/about
     icon: access_time
   -
-    title: Можно удаленно!
+    title: Работаем очно и дистанционно.
     file: index/forms_of_work
     icon: devices
 
