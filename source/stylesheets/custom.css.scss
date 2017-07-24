@@ -24,3 +24,17 @@
   display: block;
   margin: auto;
 }
+
+$height_contact: 30px;
+
+.sh_fixed_contact {
+  position: fixed ;
+  height: $height_contact;
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid grey;
+}
+
+.sh_deliver {
+  padding-bottom: $height_contact
+}
