@@ -41,3 +41,12 @@ $height_contact: 36px;
 .sh_contact_content {
   padding-top: 6px !important;
 }
+
+ul li ul {
+  padding-left: 15px !important;
+  list-style-type: circle !important;
+}
+
+ul li ul li {
+  list-style-type: circle !important;
+}
