@@ -1,7 +1,22 @@
 .sh_fixed_contact.z-depth-2.hide-on-med-and-down
   .row
     .col.m10.right-align.sh_contact_content
-      Имя Фамилия post@post.post Адрес м. Метро Метрович, тел. +7(404)777-88-00
+
+      = link_to '/about.html' do
+        %i.material-icons person
+        = "#{data.main.name} - психотерапевт"
+
+      %a{:href => "mailto: #{data.main.email}"}
+        %i.material-icons email
+        = data.main.email
+
+      = link_to '/contact.html' do
+        %i.material-icons location_on
+        = data.main.location
+
+      %a{:href => "tel: #{data.main.tel}"}
+        %i.material-icons phone
+        = data.main.tel
     .col.m2.s12.right-align
       %a.waves-effect.waves-light.btn.light-blue.lighten-1 Записаться
 .sh_deliver.hide-on-med-and-down

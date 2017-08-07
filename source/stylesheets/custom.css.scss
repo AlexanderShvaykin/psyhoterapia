@@ -25,6 +25,8 @@
   margin: auto;
 }
 
+// fixed nav
+
 $height_contact: 36px;
 
 .sh_fixed_contact {
@@ -38,8 +40,9 @@ $height_contact: 36px;
   padding-bottom: $height_contact
 }
 
-.sh_contact_content {
-  padding-top: 6px !important;
+.sh_contact_content i {
+  position: relative;
+  top: 6px;
 }
 
 ul li ul {
