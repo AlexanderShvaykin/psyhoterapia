@@ -6,6 +6,7 @@ types_practice:
     price_title: Аналитический час составляет 50 минут и стоит
     price_key: personal
     img_position: left
+    id: personal
   -
     title: Групповая работа
     img: 'group_practice.jpg'
@@ -13,3 +14,4 @@ types_practice:
     price_title: Предварительное собеседование обязательно. Бесплатно, в онлайн режиме. Стоимость занятия
     price_key: group
     img_position: left
+    id: group

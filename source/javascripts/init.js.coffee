@@ -4,3 +4,4 @@ $(document).ready ()->
     draggable: true,
     closeOnClick: true
   )
+  $('.scrollspy').scrollSpy();
