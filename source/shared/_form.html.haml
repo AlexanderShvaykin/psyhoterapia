@@ -1,0 +1,18 @@
+.row
+  = form_tag '#', :class => 'col s12', id: 'appointment' do
+    .row
+      .input-field.col.m6.s12
+        = text_field_tag :username, id: :username, required: ''
+        = label_tag 'Ваше имя', for: :username
+    .row
+      .input-field.col.m6.s12
+        = email_field_tag :email, id: :email, required: ''
+        = label_tag 'Email', for: :email
+      .input-field.col.m6.s12
+        = telephone_field_tag :tel, id: :tel, required: ''
+        = label_tag 'Телефон', for: :tel
+    .row
+      .input-field.col.l12
+        = text_area_tag :comment, class: 'materialize-textarea', id: 'comment'
+        = label_tag 'Комментарий', for: :comment
+    = submit_tag "Отправить заявку", class: 'btn light-blue lighten-1'

@@ -25,9 +25,12 @@
     %h5.header.center.orange-text= data.main.idea
     %br
     %br
-    .center
-      %a.waves-effect.waves-light.btn-large Button
-    %br
+    %h4.center Записаться на прием
+    .row
+      .col.hide-on-small-only.m5
+        = image_tag 'me_form.jpg', class: 'responsive-img'
+      .col.m7.s12
+        = partial 'shared/form'
     %br
 
 
