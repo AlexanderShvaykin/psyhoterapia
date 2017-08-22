@@ -15,4 +15,6 @@
       .input-field.col.l12
         = text_area_tag :comment, class: 'materialize-textarea', id: 'comment'
         = label_tag 'Комментарий', for: :comment
-    = submit_tag "Отправить заявку", class: 'btn light-blue lighten-1'
+    .row.light
+      = partial 'text/index/form'
+      = submit_tag "Отправить", class: 'btn light-blue lighten-1'
