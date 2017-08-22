@@ -21,11 +21,8 @@
                 = partial "text/#{block.file}"
                 - if block.page
                   = link_to 'далее', "/#{block.page}.html"
-    %br/
-    %h5.header.center.orange-text= data.main.idea
     %br
-    %br
-    %h4.center Записаться
+    %h4.center.orange-text Записаться
     .row
       .col.hide-on-small-only.m5
         = image_tag 'me_form.jpg', class: 'responsive-img'
