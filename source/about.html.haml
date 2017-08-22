@@ -1,7 +1,10 @@
 .container
-  %br
-  %br
-  = image_tag 'me.jpg', class: 'responsive-img circle left sh_me_img'
-  .flow-text
-    %h3.center.orange-text ОБО МНЕ
-    %p= partial 'text/about/main'
+  .row
+    .col.l12.s12
+      %br
+      %h4.center.orange-text ОБО МНЕ
+  .row
+    .col.l3.s12
+      = image_tag 'me_300.jpg', class: 'responsive-img circle left sh_me_img sh_img_center'
+    .col.l9.light.s12
+      %p= partial 'text/about/main'

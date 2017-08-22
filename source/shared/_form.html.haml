@@ -1,0 +1,20 @@
+.row
+  = form_tag data.form.url, method: 'POST', :class => 'col s12', id: 'appointment' do
+    .row
+      .input-field.col.m6.s12
+        = text_field_tag data.form.name, id: :username, required: ''
+        = label_tag 'Ваше имя', for: :username
+    .row
+      .input-field.col.m6.s12
+        = email_field_tag data.form.email, id: :email, required: ''
+        = label_tag 'Email', for: :email
+      .input-field.col.m6.s12
+        = telephone_field_tag data.form.tel, id: :tel, required: ''
+        = label_tag 'Телефон', for: :tel
+    .row
+      .input-field.col.l12
+        = text_area_tag data.form.comment, class: 'materialize-textarea', id: 'comment'
+        = label_tag 'Комментарий', for: :comment
+    .row.light
+      = partial 'text/index/form'
+      = submit_tag "Отправить", class: 'btn light-blue lighten-1'

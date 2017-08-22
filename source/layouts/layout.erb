@@ -12,10 +12,16 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
-    <%= partial "layouts/fix_nav" %>
-    <%= partial "layouts/nav" %>
-    <%= yield %>
-    <%= partial "layouts/footer" %>
+    <header>
+      <%= partial "layouts/fix_nav" %>
+      <%= partial "layouts/nav" %>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
+    <footer class='page-footer orange'>
+      <%= partial "layouts/footer" %>
+    </footer>
   </body>
 </html>
 <!--TODO: add gem "middleman-favicon-maker", "~> 4.0"  -->
