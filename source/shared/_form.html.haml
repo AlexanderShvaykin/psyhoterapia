@@ -1,9 +1,5 @@
 .row
-  = form_tag |
-    'https://docs.google.com/forms/d/e/1FAIpQLSez1xL-RB_mWSpQnZUFSYeEBVAzIfsrIt2_Mgo3Qg14QjINXA/formResponse', |
-    method: 'POST', |
-    :class => 'col s12', |
-    id: 'appointment' do
+  = form_tag data.form.url, method: 'POST', :class => 'col s12', id: 'appointment' do
     .row
       .input-field.col.m6.s12
         = text_field_tag data.form.name, id: :username, required: ''
