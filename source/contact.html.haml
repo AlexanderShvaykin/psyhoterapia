@@ -6,8 +6,21 @@
       = image_tag 'me_300.jpg', class: 'responsive-img circle left sh_me_img sh_img_center'
     .col.l9.light.s12
       %h5 Контакты
-      %ul
-        %li= "Адрес: #{data.main.location}"
-        %li= "телефон: #{data.main.tel}"
-        %li= "email: #{data.main.email}"
-        %li= "skype: #{data.main.skype}"
+      %table
+        %tbody
+          %tr
+            %td.sh_icon_cell
+              %i.fa.fa-map-marker
+            %td= data.main.location
+          %tr
+            %td.sh_icon_cell
+              %i.fa.fa-phone-square
+            %td= data.main.tel
+          %tr
+            %td.sh_icon_cell
+              %i.fa.fa-envelope
+            %td= data.main.email
+          %tr
+            %td.sh_icon_cell
+              %i.fa.fa-skype
+            %td= data.main.skype
