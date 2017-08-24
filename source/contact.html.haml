@@ -1,0 +1,13 @@
+.container
+  %br
+  %br
+  .row
+    .col.l3.s12
+      = image_tag 'me_300.jpg', class: 'responsive-img circle left sh_me_img sh_img_center'
+    .col.l9.light.s12
+      %h5 Контакты
+      %ul
+        %li= "Адрес: #{data.main.location}"
+        %li= "телефон: #{data.main.tel}"
+        %li= "email: #{data.main.email}"
+        %li= "skype: #{data.main.skype}"
