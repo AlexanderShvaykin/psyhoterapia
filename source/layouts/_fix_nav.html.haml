@@ -2,10 +2,6 @@
   .row
     .col.m10.right-align.sh_contact_content
 
-      = link_to '/about.html' do
-        %i.material-icons person
-        = "#{data.main.name} - психотерапевт"
-
       %a{:href => "mailto: #{data.main.email}"}
         %i.material-icons email
         = data.main.email
