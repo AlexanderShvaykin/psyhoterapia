@@ -3,13 +3,11 @@
     .userView
       .background
         = image_tag 'office.jpg'
-      = link_to '/about.html' do
-        = image_tag 'me_min.jpg', class: 'circle'
-      = link_to '/about.html' do
-        %span.white-text.name= data.main.name
+      = link_to '/contact.html' do
+        %span.white-text.name= "#{data.main.name} - психотерапевт"
       %a{:href => "mailto: #{data.main.email}"}
         %span.white-text.email= data.main.email
   = partial 'layouts/shared_links'
-
-  -# TODO: add skype and phone
-  -# TODO: add record button
+  %li
+    .divider
+  %li= link_to 'Записаться', '/index.html#appointment', class: 'waves-effect waves-light btn light-blue lighten-1'
