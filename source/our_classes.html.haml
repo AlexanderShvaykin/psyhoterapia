@@ -2,3 +2,7 @@
   %h4.center.orange-text Наши занятия
   .row
     = image_tag 'music.jpg', class: 'responsive-img'
+  .row.center
+    .col.m12.l10.offset-l1
+      %video.responsive-video{controls: ''}
+        %source{src: "/images/video.mp4", type: 'video/mp4' }
