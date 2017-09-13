@@ -1,0 +1,49 @@
+---
+title: Цены на прием психотерапевта в Санкт-Петербурге
+---
+.container
+  %table
+    %thead
+      %tr
+        %th
+          Услуга
+        %th
+          Длительность
+        %th
+          Стоимость
+    %tbody
+      %tr
+        %td
+          Индивидуальная консультация
+        %td
+          50 минут
+        %td
+          = data.price.personal
+      %tr
+        %td
+          Семейная(парная) консультация
+        %td
+          75 минут
+        %td
+          = data.price.family
+      %tr
+        %td
+          Групповое занятие(тренинг)
+        %td
+          120 минут
+        %td
+          = data.price.group
+      %tr
+        %td
+          Семинар-практикум
+        %td
+          360 минут(6 часов)
+        %td
+          = data.price.from_kids
+      %tr
+        %td
+          Музыкальное занятие
+        %td
+          45 минут
+        %td
+          = data.price.music
