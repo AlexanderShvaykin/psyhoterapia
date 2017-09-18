@@ -30,12 +30,11 @@ page '/*.txt', layout: false
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
-
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
+helpers do
+  def video_src(path)
+    "#{config.http_prefix}/#{path}".gsub(/\/+/, '/')
+  end
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
