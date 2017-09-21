@@ -43,7 +43,7 @@ configure :build do
   # activate :minify_css
   # activate :minify_javascript
 
-  set :http_prefix, '/vetrova-t'
+  # set :http_prefix, '/vetrova-t'
 end
 activate :sprockets
 sprockets.append_path File.join(root, "bower_components")
