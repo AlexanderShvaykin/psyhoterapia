@@ -50,4 +50,4 @@ sprockets.append_path File.join(root, "bower_components")
 sprockets.append_path File.join(root, "vendor")
 
 activate :livereload
-activate :sitemap
+activate :sitemap, hostname: 'http://psyhoterapia.spb.ru'

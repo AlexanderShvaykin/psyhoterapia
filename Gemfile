@@ -8,5 +8,5 @@ gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
 gem "middleman-sprockets"
 gem "middleman-gh-pages"
 gem "middleman-livereload", "~> 3.4.3"
-gem "middleman-sitemap"
+gem "middleman-sitemap", :git => "https://github.com/matsu911/middleman-sitemap"
 gem 'rubocop'
