@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
 activate :autoprefixer do |prefix|
-  prefix.browsers = "last 2 versions"
+  prefix.browsers = 'last 2 versions'
 end
 
 # Layouts
@@ -46,8 +48,14 @@ configure :build do
   # set :http_prefix, '/vetrova-t'
 end
 activate :sprockets
-sprockets.append_path File.join(root, "bower_components")
-sprockets.append_path File.join(root, "vendor")
+sprockets.append_path File.join(root, 'bower_components')
+sprockets.append_path File.join(root, 'vendor')
 
+host = 'http://psyhoterapia.spb.ru'
 activate :livereload
-activate :sitemap, hostname: 'http://psyhoterapia.spb.ru'
+activate :sitemap, hostname: host
+
+activate :robots, rules: [
+  { user_agent: '*', allow: %w[/] }
+],
+                  sitemap: host + '/sitemap.xml'
