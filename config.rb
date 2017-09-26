@@ -53,6 +53,9 @@ sprockets.append_path File.join(root, 'vendor')
 
 host = 'http://psyhoterapia.spb.ru'
 activate :livereload
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-92785461-2'
+end
 activate :sitemap, hostname: host
 
 activate :robots, rules: [
