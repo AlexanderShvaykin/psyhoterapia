@@ -34,8 +34,8 @@ pages:
     title: Практика
     src: '/practice.html'
   -
-    title: Наши занятия
-    src: '/our_classes.html'
+    # title: Наши занятия
+    # src: '/our_classes.html'
   -
     title: Цены и услуги
     src: '/price.html'
