@@ -1,4 +1,4 @@
-url: 'http://localhost:3000/orders'
+url: 'https://vetrova.herokuapp.com/orders'
 name: order[name]
 email: order[email]
 tel: order[phone]
