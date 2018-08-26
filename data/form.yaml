@@ -1,5 +1,5 @@
-url: 'https://docs.google.com/forms/d/e/1FAIpQLSeRJBo3gcPwGQOmlLgr4sQQb01OBXprNBeJwhkpF4ZD7b5dxw/formResponse'
-name: entry.91010418
-email: entry.1194014797
-tel: entry.1720550296
-comment: entry.1964510305
+url: 'http://localhost:3000/orders'
+name: order[name]
+email: order[email]
+tel: order[phone]
+comment: order[comment]

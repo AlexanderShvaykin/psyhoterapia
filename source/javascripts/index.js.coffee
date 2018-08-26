@@ -31,3 +31,9 @@ $(document).ready ()->
   set_height()
   $(window).resize(set_height)
   text_cut()
+  order_flag = $(document.location.search.split('=')).last()[0]
+  console.log order_flag
+  window.onSuccess = ->
+    $('#appointment').append('<input type="submit" value="Отправить" class="btn light-blue lighten-1">')
+  if order_flag.length > 0 && /^[0-9]*$/.test(order_flag)
+    Materialize.toast('Спасибо! Вы успешно записались, в ближайшее время я отвечу Вам на email', 4000, 'green')
