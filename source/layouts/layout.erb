@@ -6,6 +6,9 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="yandex-verification" content="711b909dfd24a80a" />
+    <%= meta_tag current_page.data.description, :name => "description" %>
+    <%= meta_tag current_page.data.keywords, :name => "keywords" %>
+
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "ПСИХОТЕРАПИЯ ДУШОЙ И МУЗЫКОЙ. Профессиональная помощь психотерапевта в Санкт-Петербурге" %></title>
     <%= stylesheet_link_tag "site" %>
