@@ -11,7 +11,7 @@ types_practice:
     title: Групповая работа
     img: 'group_practice.jpg'
     text_file: 'text/practice/practice'
-    price_title: Предварительное собеседование обязательно. Бесплатно, в онлайн режиме. <br> Стоимость занятия
+    price_title: Предварительное собеседование обязательно. Бесплатно, в онлайн режиме.
     price_key: group
     img_position: left
     id: group
