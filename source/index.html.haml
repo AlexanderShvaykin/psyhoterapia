@@ -26,12 +26,16 @@ keywords: психотерапевт, спб, онлайн
                 - if block.page
                   = link_to 'далее', "/#{block.page}.html"
     %br
-    %h4.center.orange-text Записаться
     .row
       .col.hide-on-small-only.m5
         = image_tag 'me_form.jpg', class: 'responsive-img'
       .col.m7.s12
-        = partial 'shared/form'
+        %h5#appointment Контакты
+        %ul
+          %li= "Адрес: #{data.main.location}"
+          %li= "телефон: #{data.main.tel}"
+          %li= "email: #{data.main.email}"
+          %li= "skype: #{data.main.skype}"
     %br
 
 
