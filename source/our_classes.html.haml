@@ -2,11 +2,23 @@
 description: Профессиональная помощь психотерапевта в Санкт-Петербурге. описание занятий.
 keywords: психотерапевт, спб, фото
 ---
+%link{:href => "//vjs.zencdn.net/7.3.0/video-js.min.css", :rel => "stylesheet"}/
+%script{:src => "//vjs.zencdn.net/7.3.0/video.min.js"}
+
 .container
   %h4.center.orange-text Наши занятия
   .row
     = image_tag 'music.jpg', class: 'responsive-img'
   .row.center
-    .col.m12.l10.offset-l1
-      %video.responsive-video{controls: ''}
-        %source{src: video_src("/images/video.mp4"), type: 'video/mp4' }
+    .col.m12.l6
+      %video#main-player.video-js.video-player{:controls => "", "data-setup" => "{}", :poster => video_src("/images/video1.png"), :preload => "auto"}
+        %source{:src => video_src("/images/video1.mp4"), :type => "video/mp4"}
+        %p.vjs-no-js
+          To view this video please enable JavaScript, and consider upgrading to a
+          web browser that
+    .col.m12.l6
+      %video#main-player.video-js.video-player{:controls => "", "data-setup" => "{}", :poster => video_src("/images/video2.png"), :preload => "auto"}
+        %source{:src => video_src("/images/video2.mp4"), :type => "video/mp4"}
+        %p.vjs-no-js
+          To view this video please enable JavaScript, and consider upgrading to a
+          web browser that

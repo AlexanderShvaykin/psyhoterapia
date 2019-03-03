@@ -8,6 +8,10 @@ main {
   flex: 1 0 auto;
 }
 
+.video-player {
+  display: inline-block !important;
+}
+
 .sh_default_li ul li {
   list-style-type: disc;
 }
