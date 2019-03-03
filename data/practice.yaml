@@ -3,7 +3,6 @@ types_practice:
     title: Индивидуальная работа
     img: 'onlinevsoffline_v1.jpg'
     text_file: 'text/practice/personal'
-    price_title: Аналитический час составляет 50 минут и стоит
     price_key: personal
     img_position: left
     id: personal
