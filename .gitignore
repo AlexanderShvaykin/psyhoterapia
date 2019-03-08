@@ -3,6 +3,7 @@
 .DS_Store
 .sass-cache
 build/
+.idea/
 
 # Ignore bower components
 bower_components
