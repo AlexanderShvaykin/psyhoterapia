@@ -1,5 +1,0 @@
-url: 'https://vetrova.herokuapp.com/orders'
-name: order[name]
-email: order[email]
-tel: order[phone]
-comment: order[comment]
